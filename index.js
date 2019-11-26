@@ -6,9 +6,8 @@ var path = require('path')
 
 // Load configuration from .env file
 require('dotenv').config();
-// let MESSAGEBIRD_API_KEY = "70fpMVJUOYpRUaw0GZUGbE44XIV0owPv";
 // Load and initialize MesageBird SDK
-var messagebird = require('messagebird')("T1hbwgro1gkTtnBeZAccW22TE");
+var messagebird = require('messagebird')(YOUR_API_HERE);
 
 // Set up and configure the Express framework
 var app = express();
