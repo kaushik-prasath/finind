@@ -18,14 +18,13 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+let PORT = 3000;
 
 
 // Display page to ask the user for their phone number
 app.get('/', function(req, res) {
     res.render('home');
 });
-
-
 
 // Handle phone number submission
 app.post('/verify', function(req, res) {
@@ -74,3 +73,7 @@ app.post('/success', function(req, res) {
         }
     })
 });
+
+app.listen(PORT, () => {
+    console.log(`Server started at port ${PORT}`);
+})
