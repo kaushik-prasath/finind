@@ -2,12 +2,13 @@
 var express = require('express');
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
+var path = require('path')
 
 // Load configuration from .env file
 require('dotenv').config();
-
+// let MESSAGEBIRD_API_KEY = "70fpMVJUOYpRUaw0GZUGbE44XIV0owPv";
 // Load and initialize MesageBird SDK
-var messagebird = require('messagebird')(process.env.MESSAGEBIRD_API_KEY);
+var messagebird = require('messagebird')("T1hbwgro1gkTtnBeZAccW22TE");
 
 // Set up and configure the Express framework
 var app = express();
@@ -19,6 +20,8 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 let PORT = 3000;
+
+app.use(express.static(path.join(__dirname, '/public')));
 
 
 // Display page to ask the user for their phone number

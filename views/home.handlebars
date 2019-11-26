@@ -2,7 +2,7 @@
     <p>{{error}}</p>
 {{/if}}
 <p>Please enter your phone number to receive a verification code (+91):</p>
-<form method="post" action="/step2">
-    <input type="tel" name="number" />
-    <input type="submit" value="Send code" />
+<form method="post" action="/verify">
+    <input type="tel" name="number" class="inp-num"/>
+    <input type="submit" value="Send code" class="btn-custom"/>
 </form>

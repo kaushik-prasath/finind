@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Hind&display=swap');
+.wrapper {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-family: 'Hind', sans-serif;
+}
+
+.inp-num {
+    padding: 5px 90px;
+    font-family: 'Hind', sans-serif;
+    font-size: 17px;
+}
+
+.btn-custom {
+    padding: 14px 12px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(28, 184, 65);
+    border: 0;
+}
